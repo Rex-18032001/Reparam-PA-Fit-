@@ -53,7 +53,7 @@ Example:
 2010-09-11   64.5
 ```
 # DATA
-# Place your .txt band files (e.g., L-band.txt, C-band.txt, X-band.txt) in the directory where the scripts are located. Ensure that the files contain data formatted as shown above.
+ Place your .txt band files (e.g., L-band.txt, C-band.txt, X-band.txt) in the directory where the scripts are located. Ensure that the files contain data formatted as shown above.
 
 ## Running the Fitting Script
 To fit the position angle model, run:
