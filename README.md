@@ -13,8 +13,6 @@ This repository contains a Python implementation for fitting the core position a
   ├── fit_position_angle.py    # Main fitting script
   ├── plot_results.py          # Plotting script
   ├── data_loader.py           # Data parsing utility
-  ├── config.py                # Configuration file for tunable parameters
-  ├── utils.py                 # Utility functions (if needed)
   ├── README.md                # Instructions on usage
 ```
 
@@ -22,23 +20,6 @@ This repository contains a Python implementation for fitting the core position a
 Ensure you have Python installed along with the required dependencies:
 ```bash
 pip install numpy scipy matplotlib
-```
-
-## Configuration
-All tunable parameters are located in `config.py`:
-```python
-# Initial guess for the parameters: [theta_0, A, T, d_L, d_C]
-INITIAL_GUESS = [63.5, 10, 8, 2, 2]
-
-# Parameter bounds
-LOWER_BOUNDS = [50, 0, 4, -10, -10]
-UPPER_BOUNDS = [70, 30, 20, 10, 10]
-
-# Reference epoch
-T0 = 1996
-
-# Measurement error
-MEASUREMENT_ERROR = 2.0
 ```
 
 ## Data Format
@@ -65,12 +46,14 @@ This will optimize the sinusoidal model parameters and store the results in `fit
 ## Interpreting Results
 Once the fitting script completes, it prints optimized parameters and uncertainties:
 ```
-theta_0 = 63.45 ± 1.23
-A       = 9.82 ± 2.11
-T       = 7.95 ± 0.84
-d_L     = 1.89 ± 0.37
-d_C     = 2.12 ± 0.41
-Reduced chi-square = 1.02
+theta_0: 42.1678 ± 3.8534
+A: 4.9340 ± 0.7862
+T: 15.7105 ± 0.8118
+beta: 0.7456 ± 0.0918
+tl: 1975.5380 ± 1.8572
+tc: 1974.3148 ± 1.7193
+tx: 1975.5346 ± 1.8303
+Reduced Chi-square: 4.6592
 ```
 
 ## Plotting Results
