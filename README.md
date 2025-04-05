@@ -82,7 +82,7 @@ Adjust Parameters: Update config.py to change initial guesses, parameter bounds,
 
 
 ## Caution
-I working on the scripts to make it more robust :D
+I am working on the scripts to make it more robust :D
 
 ## License
 Feel free to modify and use it :)
