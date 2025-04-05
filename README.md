@@ -10,9 +10,9 @@ This repository contains a Python implementation for fitting the core position a
 ## Repository Structure
 ```
 /position_angle_fit
+  ├── data_loader.py           # Data parsing utility
   ├── fit_position_angle.py    # Main fitting script
   ├── plot_results.py          # Plotting script
-  ├── data_loader.py           # Data parsing utility
   ├── README.md                # Instructions on usage
 ```
 
