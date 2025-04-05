@@ -1,7 +1,6 @@
 # fit_position_angle.py
 import numpy as np
 from scipy.optimize import curve_fit
-from config import INITIAL_GUESS, LOWER_BOUNDS, UPPER_BOUNDS, T0, MEASUREMENT_ERROR
 from data_loader import parse_data
 
 # Define the position angle model
